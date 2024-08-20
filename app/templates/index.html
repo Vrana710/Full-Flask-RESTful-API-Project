@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to The Books Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Welcome to The Books Store</h1>
+        <p class="lead text-center">
+            Explore our collection of amazing books, 
+            featuring titles like "The Enchanted Forest" by Emma Green, 
+            "Mysteries of the Deep" by John Smith, and "A Journey Through Time" 
+            by Alice Johnson. Dive into these captivating stories and 
+            discover new adventures, secrets, and legends waiting for you.
+        </p>
+        <nav class="mb-4">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('book_page') }}">Books</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Developed by Varsha Rana</p>
+    </footer>
+</body>
+</html>
